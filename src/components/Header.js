@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-
+import RegisterUser from "./RegisterUser";
+import Login from "./Login";
 
 function Header() {
 
@@ -11,7 +12,8 @@ function Header() {
             <nav>
                 <Link to="/" className="px-2">Home</Link>
                 <Link to="/courses" className="px-2">Courses</Link>
-                <Link to="/assignments" className="px-2">Assignments</Link>
+                <Link to="/register" className="px-2">Register New User</Link>
+                <Link to='/login' className='px-2'>Login</Link>
             </nav>
         </header>
     )

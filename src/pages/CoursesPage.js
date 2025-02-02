@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import { fetchCourses } from '../store/actions/courseActions';
 
 
+import CourseDetailsPage from './CourseDetailsPage';
+import Header from "../components/Header";
 
 
 
@@ -21,9 +23,11 @@ function CoursesPage({ courses, loading, error, fetchCourses }) {
     return (
     
         <div>
+
+            <Header></Header>
             <h1> Courses</h1>
-            {courses.map(course => (
-                <div key={course.id}>{course.title}</div>
+            {courses.map((course, index) => (
+                <div key={index}>{course.title}</div>
             ))}
         </div>
         );

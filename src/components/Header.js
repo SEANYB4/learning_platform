@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import RegisterUser from "./RegisterUser";
-import Login from "./Login";
+import Logout from './Logout.js';
 
 function Header() {
 
@@ -15,6 +15,7 @@ function Header() {
                 <Link to="/register" className="px-2">Register New User</Link>
                 <Link to='/login' className='px-2'>Login</Link>
             </nav>
+            <Logout></Logout>
         </header>
     )
 }

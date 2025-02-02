@@ -17,10 +17,12 @@
 
 import { configureStore } from "@reduxjs/toolkit";
 import coursesReducer from './reducers/courseReducer';
+import authReducer from './reducers/authReducer';
 
 
 export const store = configureStore({
     reducer: {
         courses: coursesReducer,
+        user: authReducer,
     },
 });

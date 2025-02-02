@@ -12,7 +12,10 @@ function authReducer(state = intialState, action) {
         case 'AUTH_REQUEST':
             return {...state, loading: true };
         case 'LOGIN_SUCCESS':
-            return { ...state, isAuthenticated: true, loading: false, token: action.payload.token, user: action.payload.user };
+            return { ...state, isAuthenticated: true, loading: false, token: action.payload.token,
+                userId: action.payload.userId,
+                name: action.payload.name,
+                email: action.payload.email };
         case 'AUTH_ERROR':
         case 'LOGOUT':
             return { ...state, token: null, isAuthenticated: false, loading: false, user: null};

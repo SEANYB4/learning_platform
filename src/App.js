@@ -5,7 +5,7 @@ import CoursesPage from './pages/CoursesPage';
 import AssignmentsPage from './pages/AssignmentsPage';
 import RegisterUser from "./components/RegisterUser";
 import Login from './pages/LoginPage.js';
-import AccountPage from "./pages/AccountsPage.js";
+
 
 
 

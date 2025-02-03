@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import RegisterUser from "./RegisterUser";
-import Logout from './Logout.js';
+import LogoutButton from './LogoutButton.js';
 
 function Header() {
 
@@ -14,8 +14,9 @@ function Header() {
                 <Link to="/courses" className="px-2">Courses</Link>
                 <Link to="/register" className="px-2">Register New User</Link>
                 <Link to='/login' className='px-2'>Login</Link>
+                <LogoutButton></LogoutButton>
             </nav>
-            <Logout></Logout>
+            
         </header>
     )
 }
